@@ -1,0 +1,17 @@
+﻿@model Roupa
+    
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img class="image" src="@Model.ImagemThumbnailUrl" alt=""/>
+        <div class="caption">
+            <h3 class="pull-right">@Model.Preco.ToString("c")</h3>
+            <h3><a>@Model.Name</a></h3>
+            <p>@Model.DescricaoPequena</p>
+        </div>
+        <div class="addToCart text-right">
+            <p class="button">
+                <a class="btn btn-success" id="cartButton" asp-controller="Carrinho" asp-action="AddToCarrinho" asp-route-roupaId="@Model.RoupaId">Adicionar ao carrinho</a>
+            </p>
+        </div>
+    </div>
+</div>

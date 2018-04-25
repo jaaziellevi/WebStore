@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <title>WebStore</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">WebStore</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    @await Component.InvokeAsync("CategoriaMenu")
+                    <li><a asp-controller="Contato" asp-action="Index">Contate-nos</a></li>
+                    @await Component.InvokeAsync("CarrinhoResumo")
+                </ul>
+                @await Html.PartialAsync("LoginPartial")
+                <form class="navbar-form navbar-right" asp-controller="Roupa" asp-action="" method="get">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Buscar por uma roupa" name="searchString" value="@ViewData["searchString"]">
+                    </div>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container body-content" style="padding:100px;">
+        <div class="starter-template">
+            @RenderBody()
+        </div>
+    </div>
+    <footer class="container footer">
+        <hr />
+        <p><a target="_blank" href="https://github.com/jaaziellevi">&copy; 2018 - Jaaziel Moura</a></p>
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

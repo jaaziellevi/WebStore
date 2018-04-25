@@ -1,0 +1,11 @@
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.deps.json
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.runtimeconfig.json
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.runtimeconfig.dev.json
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.dll
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.csprojResolveAssemblyReference.cache
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.csproj.CoreCompileInputs.cache
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.AssemblyInfoInputs.cache
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.AssemblyInfo.cs
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.pdb
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.dll
+D:\Documentos\Computacao\Linguagens\Linguagem C#\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.pdb

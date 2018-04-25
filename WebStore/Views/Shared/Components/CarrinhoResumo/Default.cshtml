@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@model CarrinhoViewModel
+
+@if (Model.CarrinhoDeCompras.ItensDoCarrinho.Count > 0 /*&& SignInManager.IsSignedIn(User)*/)
+{
+    <li>
+        <a asp-controller="CarrinhoDeCompras">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span id="cart-status">
+                @Model.CarrinhoDeCompras.ItensDoCarrinho.Count
+            </span>
+        </a>
+    </li>
+}

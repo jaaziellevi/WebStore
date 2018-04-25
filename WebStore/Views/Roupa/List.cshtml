@@ -1,0 +1,8 @@
+﻿@model RoupaListViewModel
+
+<h2>@Model.CurrentCategory</h2>
+
+@foreach (Roupa roupa in Model.Roupas)
+{
+    @Html.Partial("RoupasResumo", roupa)
+}
